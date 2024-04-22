@@ -1,12 +1,62 @@
+.toDoList{
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #333;
+    max-width: 360px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.toDoList h1{
+    font-size: 4rem;
+    color: #ff6347;
+}
 
-/* 
+.inputText, .addButton {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+}
 
-*/
+.addButton{
+    background-color: #5cb85c;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.addButton:hover{
+    background-color: #4cae4c;
+}
+
+.inputText{
+    width: 75%;
+    margin-right: 5px;
+}
+
+.text{
+    transition: color 0.3s;
+}
+
+.deleteButton{
+    margin-left: 10px;
+    background-color: hsl(0, 100%, 50%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.deleteButton:hover{
+    background-color: #c9302c;
+}
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+li:hover .text {
+    color: #ff6347;
+}
